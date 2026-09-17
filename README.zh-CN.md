@@ -14,6 +14,10 @@
 | **费用** | 安装免费。每次生成消耗 Beatra 账号积分，只有你明确要求这次生成或批准确认卡后才会付费。 |
 | **支持的 Agent** | Claude Code、Codex、OpenClaw |
 
+<p align="center"><img src="assets/hero.webp" width="800" alt="一张虚构女性的肖像，为了这个演示特意生成了蜡质皮肤、过饱和的 AI 感，修复后皮肤纹理和光线变得自然，脸、姿势、毛衣和咖啡馆背景都保持不变。由 Beatra AI 生成。"></p>
+
+*一张虚构女性的肖像，为了这个演示特意生成了蜡质皮肤、过饱和的 AI 感，修复后皮肤纹理和光线变得自然，脸、姿势、毛衣和咖啡馆背景都保持不变。由 Beatra AI 生成。*
+
 | Skill | Entry point | Version |
 | --- | --- | --- |
 | [`ai-image-realism`](skills/ai-image-realism) | [SKILL.md](skills/ai-image-realism/SKILL.md) | 0.2.7 |
@@ -40,6 +44,18 @@ gh skill install beatra-ai/ai-image-realism-skill ai-image-realism
 
 ```text
 从 https://github.com/beatra-ai/ai-image-realism-skill 安装 ai-image-realism skill（目录 skills/ai-image-realism），然后按它的 SKILL.md 连接我的 Beatra 账号。
+```
+
+## 效果示例
+
+<p align="center"><img src="assets/demo-2.webp" width="800" alt="同一张脸修复前后的特写：磨皮般的皮肤和两团圆形橙色腮红，换成了看得见毛孔的皮肤和自然的红润。由 Beatra AI 生成。"></p>
+
+*同一张脸修复前后的特写：磨皮般的皮肤和两团圆形橙色腮红，换成了看得见毛孔的皮肤和自然的红润。由 Beatra AI 生成。*
+
+提示词：
+
+```text
+[before] Close-up head-and-shoulders portrait of a fictional woman in her early thirties with shoulder-length wavy chestnut hair, hazel eyes and a soft closed-mouth smile, wearing a cream knit turtleneck sweater, standing in front of a softly blurred indoor cafe background with warm bokeh lights. Render it in the stereotypical glossy AI-generated portrait look: waxy, airbrushed, plastic-smooth skin with no pores, over-saturated orange-pink glow on the cheeks, a dreamy bloom haze, overly bright rim light, unnaturally perfect mirror-symmetric facial features and glassy doll-like eyes. Front-facing, centered, looking into the camera, both eyes clearly visible, hands out of frame, no text, no logos. ||| [after] Reduce the plastic, airbrushed AI look across this portrait so it reads like a real camera photograph. Restore natural skin texture with fine visible pores, subtle fine lines and slight natural unevenness in skin tone; replace the two round orange blush patches with a faint natural flush; tone down the over-saturated orange-pink glow, bloom haze and over-bright rim light to realistic warm cafe lighting with natural color; make the catchlights in the eyes small and natural. Preserve the same woman's identity and facial features, expression and closed-mouth smile, eye color, wavy chestnut hairstyle, cream knit turtleneck sweater, pose, framing, crop, cafe background and lighting direction. Do not add makeup, text or logos.
 ```
 
 ## 你能得到什么

@@ -14,6 +14,10 @@ Make existing AI portraits, product images, and marketing visuals look more natu
 | **Cost** | Free to install. Each render uses credits on your Beatra account, and paid steps run only when you ask for that exact render or approve its card. |
 | **Works with** | Claude Code, Codex, OpenClaw |
 
+<p align="center"><img src="assets/hero.webp" width="800" alt="A portrait of a fictional woman deliberately generated with the waxy, over-saturated AI look for this demo, then repaired to natural skin texture and warmer realistic light while keeping her face, pose, sweater, and cafe background. AI-generated with Beatra."></p>
+
+*A portrait of a fictional woman deliberately generated with the waxy, over-saturated AI look for this demo, then repaired to natural skin texture and warmer realistic light while keeping her face, pose, sweater, and cafe background. AI-generated with Beatra.*
+
 | Skill | Entry point | Version |
 | --- | --- | --- |
 | [`ai-image-realism`](skills/ai-image-realism) | [SKILL.md](skills/ai-image-realism/SKILL.md) | 0.2.7 |
@@ -41,6 +45,18 @@ Or paste this into your agent:
 
 ```text
 Install the ai-image-realism skill from https://github.com/beatra-ai/ai-image-realism-skill (folder skills/ai-image-realism), then follow its SKILL.md to connect my Beatra account.
+```
+
+## Examples
+
+<p align="center"><img src="assets/demo-2.webp" width="800" alt="Close-up of the same face before and after the repair, showing airbrushed skin and round orange blush patches replaced by visible pores and a natural flush. AI-generated with Beatra."></p>
+
+*Close-up of the same face before and after the repair, showing airbrushed skin and round orange blush patches replaced by visible pores and a natural flush. AI-generated with Beatra.*
+
+Prompt:
+
+```text
+[before] Close-up head-and-shoulders portrait of a fictional woman in her early thirties with shoulder-length wavy chestnut hair, hazel eyes and a soft closed-mouth smile, wearing a cream knit turtleneck sweater, standing in front of a softly blurred indoor cafe background with warm bokeh lights. Render it in the stereotypical glossy AI-generated portrait look: waxy, airbrushed, plastic-smooth skin with no pores, over-saturated orange-pink glow on the cheeks, a dreamy bloom haze, overly bright rim light, unnaturally perfect mirror-symmetric facial features and glassy doll-like eyes. Front-facing, centered, looking into the camera, both eyes clearly visible, hands out of frame, no text, no logos. ||| [after] Reduce the plastic, airbrushed AI look across this portrait so it reads like a real camera photograph. Restore natural skin texture with fine visible pores, subtle fine lines and slight natural unevenness in skin tone; replace the two round orange blush patches with a faint natural flush; tone down the over-saturated orange-pink glow, bloom haze and over-bright rim light to realistic warm cafe lighting with natural color; make the catchlights in the eyes small and natural. Preserve the same woman's identity and facial features, expression and closed-mouth smile, eye color, wavy chestnut hairstyle, cream knit turtleneck sweater, pose, framing, crop, cafe background and lighting direction. Do not add makeup, text or logos.
 ```
 
 ## What you get
