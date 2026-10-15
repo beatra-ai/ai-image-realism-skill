@@ -20,7 +20,7 @@
 
 | Skill | Entry point | Version |
 | --- | --- | --- |
-| [`ai-image-realism`](skills/ai-image-realism) | [SKILL.md](skills/ai-image-realism/SKILL.md) | 0.3.0 |
+| [`ai-image-realism`](skills/ai-image-realism) | [SKILL.md](skills/ai-image-realism/SKILL.md) | 0.3.3 |
 
 本仓库由 [beatra-ai/beatra-skills](https://github.com/beatra-ai/beatra-skills/tree/main/skills/ai-image-realism) 自动发布，问题请到那里反馈。
 
@@ -89,10 +89,11 @@ gh skill install beatra-ai/ai-image-realism-skill ai-image-realism
 
 会针对明确问题修复并保持其余内容稳定，再对照原图复查文字、标识几何、手指与面部结构、人物特征和目标区域。
 
-## 更新
+## 更新与安全
 
-安装后的 skill 每天最多检查一次新版本，替换前先校验官方归档，任何一步失败都不会动你已安装的版本。
-随时可以关闭，见 skill 内的 `references/automatic-updates-and-safety.md`。
+自 2026 年 10 月的版本起，本 skill 不再包含自更新程序：它只运行你安装的文件，从不自行替换。
+请用安装时的工具更新——`npx skills update ai-image-realism` 或 `gh skill update ai-image-realism`。
+详见 skill 内的 `references/updates-and-security.md`。
 
 ## 许可证
 

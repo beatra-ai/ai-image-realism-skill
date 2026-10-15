@@ -20,7 +20,7 @@ Make existing AI portraits, product images, and marketing visuals look more natu
 
 | Skill | Entry point | Version |
 | --- | --- | --- |
-| [`ai-image-realism`](skills/ai-image-realism) | [SKILL.md](skills/ai-image-realism/SKILL.md) | 0.3.0 |
+| [`ai-image-realism`](skills/ai-image-realism) | [SKILL.md](skills/ai-image-realism/SKILL.md) | 0.3.3 |
 
 This repository is published automatically from [beatra-ai/beatra-skills](https://github.com/beatra-ai/beatra-skills/tree/main/skills/ai-image-realism). Report issues there.
 
@@ -90,12 +90,12 @@ It records identity, product shape, color, packaging, and brand marks as must-ke
 
 It targets the named defect, keeps the rest recognizable, and visually reviews typography, logo geometry, anatomy, identity, and the corrected area against the original.
 
-## Updates
+## Updates and security
 
-Each installed skill checks for a new version at most once a day, verifies the
-official archive before replacing itself, and leaves your installation untouched
-if anything fails. Turn it off at any time — see
-`references/automatic-updates-and-safety.md` inside the skill.
+Since the 2026-10 release, this skill contains no self-updater: it runs only the
+files you installed and never replaces them on its own. Update it with the tool
+you installed it with — `npx skills update ai-image-realism` or `gh skill update ai-image-realism`.
+Details: `references/updates-and-security.md` inside the skill.
 
 ## License
 
