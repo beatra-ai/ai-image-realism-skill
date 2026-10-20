@@ -1,6 +1,8 @@
 # AI Image Realism Skill
 
-[English](./README.md) | 简体中文
+[English](./README.md) | 简体中文 | [日本語](./README.ja.md)
+
+> 👉 也看看 [AI Image Generator Skill](https://github.com/beatra-ai/ai-image-generator-skill)
 
 修复 AI 图片的塑料感、手指与面部破绽、重复纹理和光影不协调，尽量保留人物、商品与原有构图，让已选图片更自然可信，在 Claude Code、Cursor、Codex、Windsurf、Cline 或 OpenClaw 里直接完成。
 
@@ -52,6 +54,12 @@ gh skill install beatra-ai/ai-image-realism-skill ai-image-realism
 <p align="center"><img src="assets/demo-2.webp" width="800" alt="同一张脸修复前后的特写：磨皮般的皮肤和两团圆形橙色腮红，换成了看得见毛孔的皮肤和自然的红润。由 Beatra AI 生成。"></p>
 
 *同一张脸修复前后的特写：磨皮般的皮肤和两团圆形橙色腮红，换成了看得见毛孔的皮肤和自然的红润。由 Beatra AI 生成。*
+
+在你的 Agent 里这样说：
+
+```text
+修掉 ./portrait-waxy.png 里的 AI 感：让皮肤有真实的毛孔质感，把圆圆的橘色腮红换成自然的红晕，光线调暖一点，但脸、姿势、毛衣和咖啡馆背景都不要变。
+```
 
 提示词：
 

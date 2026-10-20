@@ -1,6 +1,8 @@
 # AI Image Realism Skill
 
-English | [简体中文](./README.zh-CN.md)
+English | [简体中文](./README.zh-CN.md) | [日本語](./README.ja.md)
+
+> 👉 See also [AI Image Generator Skill](https://github.com/beatra-ai/ai-image-generator-skill)
 
 Make existing AI portraits, product images, and marketing visuals look more natural by fixing plastic skin, malformed hands and faces, repeated textures, and inconsistent lighting, from inside Claude Code, Cursor, Codex, Windsurf, Cline, or OpenClaw.
 
@@ -54,6 +56,12 @@ Install the ai-image-realism skill from https://github.com/beatra-ai/ai-image-re
 <p align="center"><img src="assets/demo-2.webp" width="800" alt="Close-up of the same face before and after the repair, showing airbrushed skin and round orange blush patches replaced by visible pores and a natural flush. AI-generated with Beatra."></p>
 
 *Close-up of the same face before and after the repair, showing airbrushed skin and round orange blush patches replaced by visible pores and a natural flush. AI-generated with Beatra.*
+
+Ask your agent:
+
+```text
+Fix the AI look in ./portrait-waxy.png: give the skin real texture with visible pores, replace the round orange blush with a natural flush, and warm the light, while keeping her face, pose, sweater and the cafe background unchanged.
+```
 
 Prompt:
 
