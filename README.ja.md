@@ -35,6 +35,33 @@
 npx skills add beatra-ai/ai-image-realism-skill
 ```
 
+Claude Code プラグインとして：
+
+```bash
+claude plugin marketplace add beatra-ai/ai-image-realism-skill
+claude plugin install ai-image-realism@ai-image-realism-skill
+```
+
+Codex プラグインとして：
+
+```bash
+codex plugin marketplace add beatra-ai/ai-image-realism-skill
+codex plugin add ai-image-realism@ai-image-realism-skill
+```
+
+GitHub Copilot CLI プラグインとして：
+
+```bash
+copilot plugin marketplace add beatra-ai/ai-image-realism-skill
+copilot plugin install ai-image-realism@ai-image-realism-skill
+```
+
+Gemini CLI 拡張機能として：
+
+```bash
+gemini extensions install https://github.com/beatra-ai/ai-image-realism-skill
+```
+
 GitHub CLI を使う場合：
 
 ```bash

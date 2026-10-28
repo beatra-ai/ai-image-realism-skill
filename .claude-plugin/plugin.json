@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "ai-image-realism",
+  "displayName": "AI Image Realism",
+  "version": "0.3.7",
+  "description": "Make existing AI portraits, product images, and marketing visuals look more natural by fixing plastic skin, malformed hands and faces, repeated textures, and inconsistent lighting.",
+  "author": {
+    "name": "Beatra AI",
+    "url": "https://github.com/beatra-ai"
+  },
+  "homepage": "https://beatra.ai/skills/ai-image-realism",
+  "repository": "https://github.com/beatra-ai/ai-image-realism-skill",
+  "license": "MIT-0",
+  "icon": "./assets/icon.png"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "ai-image-realism-skill",
+  "interface": {
+    "displayName": "AI Image Realism"
+  },
+  "plugins": [
+    {
+      "name": "ai-image-realism",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Creativity"
+    }
+  ]
+}
