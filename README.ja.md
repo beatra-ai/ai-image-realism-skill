@@ -62,6 +62,12 @@ Gemini CLI 拡張機能として：
 gemini extensions install https://github.com/beatra-ai/ai-image-realism-skill
 ```
 
+Antigravity CLI プラグインとして：
+
+```bash
+agy plugin install https://github.com/beatra-ai/ai-image-realism-skill
+```
+
 GitHub CLI を使う場合：
 
 ```bash
@@ -94,6 +100,13 @@ https://github.com/beatra-ai/ai-image-realism-skill から ai-image-realism ス�
 [before] Close-up head-and-shoulders portrait of a fictional woman in her early thirties with shoulder-length wavy chestnut hair, hazel eyes and a soft closed-mouth smile, wearing a cream knit turtleneck sweater, standing in front of a softly blurred indoor cafe background with warm bokeh lights. Render it in the stereotypical glossy AI-generated portrait look: waxy, airbrushed, plastic-smooth skin with no pores, over-saturated orange-pink glow on the cheeks, a dreamy bloom haze, overly bright rim light, unnaturally perfect mirror-symmetric facial features and glassy doll-like eyes. Front-facing, centered, looking into the camera, both eyes clearly visible, hands out of frame, no text, no logos. ||| [after] Reduce the plastic, airbrushed AI look across this portrait so it reads like a real camera photograph. Restore natural skin texture with fine visible pores, subtle fine lines and slight natural unevenness in skin tone; replace the two round orange blush patches with a faint natural flush; tone down the over-saturated orange-pink glow, bloom haze and over-bright rim light to realistic warm cafe lighting with natural color; make the catchlights in the eyes small and natural. Preserve the same woman's identity and facial features, expression and closed-mouth smile, eye color, wavy chestnut hairstyle, cream knit turtleneck sweater, pose, framing, crop, cafe background and lighting direction. Do not add makeup, text or logos.
 ```
 
+## 入力と出力
+
+| | 種類 | 形式 | 仕様 |
+| --- | --- | --- | --- |
+| **入力** | 画像：使い続けたい AI 生成画像 | JPG、PNG、WEBP | — |
+| **出力** | 画像：元の構図を保ったレタッチ画像 | PNG | 1 リクエストにつき 1 枚／2K |
+
 ## 技術仕様と出力上限
 
 2026-10-18 時点。最新の一覧：https://docs.beatra.ai/ja/docs/models
@@ -123,19 +136,19 @@ https://github.com/beatra-ai/ai-image-realism-skill から ai-image-realism ス�
 
 ### どのようなAI画像の問題を補正できますか？
 
-不自然な肌、崩れた手指や顔、反復模様、光の不整合、定型的な背景を中心に直し、良い部分をできるだけ保ちます。
+不自然な肌、崩れた手指や顔、反復模様、光の不整合、定型的な背景を中心に直します。
 
 ### 部分補正、全体レタッチ、再構成はどう選びますか？
 
 見える問題に合わせて選びます。特定の破綻は部分補正、質感や光は全体レタッチ、より大きな表現変更を望む場合は再構成を使います。
 
-### 人物の特徴や商品のブランド要素を保てますか？
+### 人物の特徴やブランド要素はどう扱いますか？
 
-人物の特徴、商品の形、色、包装、ブランド表示を残す要素として整理し、完成後に元画像と比較してずれを確認します。
+レタッチは元の画像の上で行い、肌の質感、手指、光など、指定した問題だけに手を入れます。
 
-### レタッチ後の文字、ロゴ、手指、顔はどう確認しますか？
+### 手指、顔、文字、ロゴも直せますか？
 
-指定した問題を直しながら他の内容を保ち、文字、ロゴ形状、手指と顔の構造、人物の特徴、補正箇所を元画像と見比べます。
+はい。崩れた手指や顔、乱れた文字、ゆがんだロゴの形を、指定した範囲の部分修正で直します。
 
 ## 更新とセキュリティ
 
@@ -145,7 +158,9 @@ https://github.com/beatra-ai/ai-image-realism-skill から ai-image-realism ス�
 
 ## ライセンス
 
-[MIT-0](LICENSE)：商用を含め、自由に使用・改変・再配布できます。クレジット表記は不要です。ClawHub 上のこれらのスキルと同じ条件です。
+このリポジトリのスキルファイル（`SKILL.md`、リファレンス、スクリプト）とこの README は [MIT-0](LICENSE) で提供しています。商用を含め、自由に使用・改変・再配布でき、クレジット表記は不要です。
+
+生成は Beatra のクラウドサービスで行われ、[Beatra 利用規約](https://beatra.ai/terms?utm_source=github&utm_medium=flagship&utm_campaign=ai-image-realism-skill)が適用されます。
 
 ## リンク
 

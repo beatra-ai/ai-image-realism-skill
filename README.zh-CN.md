@@ -62,6 +62,12 @@ copilot plugin install ai-image-realism@ai-image-realism-skill
 gemini extensions install https://github.com/beatra-ai/ai-image-realism-skill
 ```
 
+作为 Antigravity CLI 插件：
+
+```bash
+agy plugin install https://github.com/beatra-ai/ai-image-realism-skill
+```
+
 使用 GitHub CLI：
 
 ```bash
@@ -93,6 +99,13 @@ gh skill install beatra-ai/ai-image-realism-skill ai-image-realism
 ```text
 [before] Close-up head-and-shoulders portrait of a fictional woman in her early thirties with shoulder-length wavy chestnut hair, hazel eyes and a soft closed-mouth smile, wearing a cream knit turtleneck sweater, standing in front of a softly blurred indoor cafe background with warm bokeh lights. Render it in the stereotypical glossy AI-generated portrait look: waxy, airbrushed, plastic-smooth skin with no pores, over-saturated orange-pink glow on the cheeks, a dreamy bloom haze, overly bright rim light, unnaturally perfect mirror-symmetric facial features and glassy doll-like eyes. Front-facing, centered, looking into the camera, both eyes clearly visible, hands out of frame, no text, no logos. ||| [after] Reduce the plastic, airbrushed AI look across this portrait so it reads like a real camera photograph. Restore natural skin texture with fine visible pores, subtle fine lines and slight natural unevenness in skin tone; replace the two round orange blush patches with a faint natural flush; tone down the over-saturated orange-pink glow, bloom haze and over-bright rim light to realistic warm cafe lighting with natural color; make the catchlights in the eyes small and natural. Preserve the same woman's identity and facial features, expression and closed-mouth smile, eye color, wavy chestnut hairstyle, cream knit turtleneck sweater, pose, framing, crop, cafe background and lighting direction. Do not add makeup, text or logos.
 ```
+
+## 输入与输出
+
+| | 类型 | 格式 | 规格 |
+| --- | --- | --- | --- |
+| **输入** | 图片：想继续使用的 AI 图片 | JPG、PNG、WEBP | — |
+| **输出** | 图片：保留原有构图的精修图 | PNG | 单次 1 张；2K |
 
 ## 技术规格与输出限制
 
@@ -132,19 +145,19 @@ gh skill install beatra-ai/ai-image-realism-skill ai-image-realism
 
 ### 可以修哪些常见的AI图片问题？
 
-主要修复塑料感、手指和面部异常、重复纹理、光影不统一与模板化背景，并尽量保留已经满意的细节。
+主要修复塑料感、手指和面部异常、重复纹理、光影不统一与模板化背景。
 
 ### 如何选择局部修复、全图精修或重新构图？
 
 会按可见问题选择处理方式：明确破绽用局部修复，质感或光影问题用全图精修，需要更大幅度创意变化时再重新构图。
 
-### 能保留人物长相和商品品牌吗？
+### 人物长相和商品品牌怎么处理？
 
-会把人物特征、商品外形、颜色、包装与品牌标识列为必须保留的细节，并在完成后对照原图检查这些内容是否偏离。
+精修在你的原图上进行，只改你指出的问题，比如皮肤质感、手指或光影。
 
-### 精修后会怎样检查文字、Logo、手指和面部？
+### 能修手指、面部、文字和 Logo 吗？
 
-会针对明确问题修复并保持其余内容稳定，再对照原图复查文字、标识几何、手指与面部结构、人物特征和目标区域。
+能。畸形的手指和面部、错乱的文字和变形的标识，都在你指出的区域里局部修复。
 
 ## 更新与安全
 
@@ -154,7 +167,9 @@ gh skill install beatra-ai/ai-image-realism-skill ai-image-realism
 
 ## 许可证
 
-[MIT-0](LICENSE)：可自由使用、修改和再分发，包括商用，无需署名；与这些 skill 在 ClawHub 上的条款一致。
+本仓库的 Skill 文件（`SKILL.md`、参考文档和脚本）与本 README 采用 [MIT-0](LICENSE) 许可：可自由使用、修改和再分发，包括商用，无需署名。
+
+内容生成在 Beatra 云端完成，适用 [Beatra 服务条款](https://www.beatra.cn/terms?utm_source=github&utm_medium=flagship&utm_campaign=ai-image-realism-skill)。
 
 ## 相关链接
 

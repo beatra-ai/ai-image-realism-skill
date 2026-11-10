@@ -10,6 +10,18 @@
   "homepage": "https://beatra.ai/skills/ai-image-realism",
   "repository": "https://github.com/beatra-ai/ai-image-realism-skill",
   "license": "MIT-0",
+  "keywords": [
+    "AI image realism",
+    "AI image editor",
+    "AI image humanizer",
+    "fix AI image artifacts",
+    "make AI images look realistic",
+    "remove AI look",
+    "AI image retouching",
+    "fix AI hands",
+    "fix extra fingers",
+    "AI product image retouching"
+  ],
   "extensions": {
     "com.openai": {
       "interface": {
@@ -19,6 +31,13 @@
         "developerName": "Beatra AI",
         "category": "Creativity",
         "websiteURL": "https://beatra.ai/skills/ai-image-realism",
+        "supportURL": "https://github.com/beatra-ai/.github/blob/main/SUPPORT.md",
+        "privacyPolicyURL": "https://beatra.ai/privacy",
+        "termsOfServiceURL": "https://beatra.ai/terms",
+        "defaultPrompt": [
+          "Use AI Image Realism & Artifact Fixer on my AI portrait (attached): the skin looks plastic and a finger is off. Keep the rest."
+        ],
+        "composerIcon": "./assets/icon.png",
         "logo": "./assets/icon.png"
       }
     }

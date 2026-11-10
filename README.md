@@ -62,6 +62,12 @@ As a Gemini CLI extension:
 gemini extensions install https://github.com/beatra-ai/ai-image-realism-skill
 ```
 
+As an Antigravity CLI plugin:
+
+```bash
+agy plugin install https://github.com/beatra-ai/ai-image-realism-skill
+```
+
 With the GitHub CLI:
 
 ```bash
@@ -95,6 +101,13 @@ Prompt:
 ```text
 [before] Close-up head-and-shoulders portrait of a fictional woman in her early thirties with shoulder-length wavy chestnut hair, hazel eyes and a soft closed-mouth smile, wearing a cream knit turtleneck sweater, standing in front of a softly blurred indoor cafe background with warm bokeh lights. Render it in the stereotypical glossy AI-generated portrait look: waxy, airbrushed, plastic-smooth skin with no pores, over-saturated orange-pink glow on the cheeks, a dreamy bloom haze, overly bright rim light, unnaturally perfect mirror-symmetric facial features and glassy doll-like eyes. Front-facing, centered, looking into the camera, both eyes clearly visible, hands out of frame, no text, no logos. ||| [after] Reduce the plastic, airbrushed AI look across this portrait so it reads like a real camera photograph. Restore natural skin texture with fine visible pores, subtle fine lines and slight natural unevenness in skin tone; replace the two round orange blush patches with a faint natural flush; tone down the over-saturated orange-pink glow, bloom haze and over-bright rim light to realistic warm cafe lighting with natural color; make the catchlights in the eyes small and natural. Preserve the same woman's identity and facial features, expression and closed-mouth smile, eye color, wavy chestnut hairstyle, cream knit turtleneck sweater, pose, framing, crop, cafe background and lighting direction. Do not add makeup, text or logos.
 ```
+
+## Inputs and outputs
+
+| | Type | Formats | Specifications |
+| --- | --- | --- | --- |
+| **Input** | Image — AI-generated image you want to keep | JPG, PNG, WEBP | — |
+| **Output** | Image — Retouched image with the original composition | PNG | 1 image per request; 2K |
 
 ## Technical Specifications & Output Limits
 
@@ -134,19 +147,19 @@ As of 2026-10-18. Live list: https://docs.beatra.ai/en/docs/models
 
 ### What kinds of AI image problems can it repair?
 
-It focuses on visible artifacts such as plastic-looking skin, distorted hands and faces, repeated textures, inconsistent lighting, and formulaic backgrounds while keeping accepted details recognizable where possible.
+Visible artifacts such as plastic-looking skin, distorted hands and faces, repeated textures, inconsistent lighting, and formulaic backgrounds.
 
 ### How does it choose between a local fix and a whole-image refinement?
 
 It matches the edit to the visible problem: focused local repair for a specific defect, whole-image refinement for texture or lighting, and a new composition when you want a broader reinterpretation.
 
-### Can it preserve a person's identity or a product's branding?
+### How are faces and branding handled?
 
-It records identity, product shape, color, packaging, and brand marks as must-keep details, then compares the result with the original and checks those details for drift.
+The retouch is made on your own image and touches only the flaws you name, such as skin texture, a hand, or the light.
 
-### How are text, logos, hands, and faces reviewed after retouching?
+### Can it fix hands, faces, text, and logos?
 
-It targets the named defect, keeps the rest recognizable, and visually reviews typography, logo geometry, anatomy, identity, and the corrected area against the original.
+Yes. Distorted hands and faces, broken text, and warped logo shapes are repaired in place, as a local edit of the area you name.
 
 ## Updates and security
 
@@ -157,9 +170,10 @@ Details: `references/updates-and-security.md` inside the skill.
 
 ## License
 
-[MIT-0](LICENSE) — free to use, modify, and redistribute, including
-commercially. No attribution required. Same terms as these skills carry on
-ClawHub.
+The skill files in this repository (`SKILL.md`, references, and scripts) and this README are licensed under
+[MIT-0](LICENSE): free to use, modify, and redistribute, including commercially, with no attribution required.
+
+Media generation runs on Beatra's cloud service under the [Beatra Terms of Service](https://beatra.ai/terms?utm_source=github&utm_medium=flagship&utm_campaign=ai-image-realism-skill).
 
 ## Links
 

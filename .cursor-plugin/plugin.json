@@ -9,5 +9,17 @@
   "homepage": "https://beatra.ai/skills/ai-image-realism",
   "repository": "https://github.com/beatra-ai/ai-image-realism-skill",
   "license": "MIT-0",
+  "keywords": [
+    "AI image realism",
+    "AI image editor",
+    "AI image humanizer",
+    "fix AI image artifacts",
+    "make AI images look realistic",
+    "remove AI look",
+    "AI image retouching",
+    "fix AI hands",
+    "fix extra fingers",
+    "AI product image retouching"
+  ],
   "logo": "assets/icon.png"
 }
